@@ -1,0 +1,936 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Simmons - Master Chef</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css" integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg==" crossorigin="nonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+             width: auto; 
+            background-color: #453127;
+            
+            
+        }
+
+        .background-img img {
+            position: fixed;
+        }
+
+        .background-img img.img1 {
+            top: 10px;
+            left: 10px;
+            height: 200px;
+            width: 150px;
+        }
+
+        .background-img img.img2 {
+            left: 0;
+            bottom: 0;
+            height: 300px;
+            width: 450px;
+            padding: 20px;
+        }
+
+        .background-img img.img3 {
+            top: 0;
+            right: 0;
+            height: 300px;
+            width: 450px;
+        }
+        .background-img img.img4{
+            top: 0;
+            left: 0;
+        }
+
+        .container {
+            width: 425px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            
+            background:#faf3eb;
+            /* padding: 20px; */
+            
+        
+        }
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #banner img {
+             width: auto;
+            height: auto;
+            background-color: #3b5454;
+            
+        }
+        #shape img{
+            width:  auto;
+            height: auto;
+            position: relative;
+            bottom: 50px;
+            color: white;
+            left: 0;
+        
+        }
+
+        .master {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #simmons {
+            font-size: 1.7rem;
+            color: #9f4920;
+        }
+        #headingabout{
+            font-size: 23px;
+            color: #9f4920;
+            
+            
+        }
+
+       #chef{
+            font-size: 1rem;
+            color: #555;
+        }
+
+        #client img {
+            width: 150px;
+            height: 150px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            margin-top: 15px;
+        
+        }
+
+        
+        #para {
+            font-size: 17px;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        .about-img img{
+            border-radius: 5px;
+        }
+        #natural{
+               font-size: 20px;
+               margin-left: 40px;
+               
+        }
+        #sed{
+          font-size: 15px;
+          margin-left: 40px;
+          
+        }
+        
+        #cupicon{
+            height: 60px;
+            width: 60px;
+            color: #9f4920;
+            
+        }
+        #smallheading{
+            font-size: 2rem;
+            color: #9f4920;
+            margin-left: 120px;
+            padding: 20px;
+        }
+      
+      .icon-bar{
+        display: flex;
+    justify-content: center;
+flex-wrap: wrap;
+        align-items: center;
+        
+      }
+      #menu{
+        margin-left: 140px;
+        color: #9f4920;
+      }
+      #button{
+        font-size: 18px;
+        padding: 15px;
+        margin: 10px;
+        background-color:#9f4920 ;
+        color: white;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius:10px ;
+      }
+      .Testimonials{
+        text-align: center;
+        
+            padding: 20px;
+           position: absolute; 
+           top: 2880PX;
+           
+            
+   
+      }
+      #final img {
+            width: 150px;
+            height: 150px;
+          border-radius: 50%;
+            margin-top: 15px;
+            padding: 20px;
+            
+        
+        }
+        .lower-bar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #offers{
+            margin-left: 150px;
+            color: #9f4920;
+
+        }
+        #ordernow{
+            font-size: 18px;
+            padding: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border: 2px solid #9f4920 ;
+            background-color: #9f4920;
+            color: white;
+            position: absolute;
+            bottom: 2030px;
+            right: 70px;
+        }
+        #buy1{
+            color: #ddd;
+            position: absolute;
+             bottom: 2100px;
+            right: 70px; 
+        }
+        #get1{
+            background-color: gainsboro;
+        }
+        .lower-bar img {
+            width: 100%;
+            border-radius: 5px;
+
+            
+            
+        }
+        #Reasons{
+            font-size: 20px;
+           margin-left: 50px;
+        color: #9f4920;
+        
+        }
+        #lobortis{
+            font-size: 18px;
+            margin-left: 30px;
+        }
+        #letest{
+            margin-left: 110px;
+            color: #9f4920;
+            padding: 10px;
+        }
+        #view{
+            padding: 10px;
+            margin: 20px;
+            font-size: 18px;
+            border: 2px solid #9f4920;
+            background-color: #9f4920; 
+            color: white;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius:10px ;
+            margin-right: 20px;
+        }
+        .form-container {
+    
+    padding: 30px;
+    border-radius: 10px;
+
+    width: 100%;
+    
+}
+
+
+#pick{
+    border-radius: 50%;
+}
+
+
+
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.menu-title {
+    font-size: 1.2rem;
+    color: #9f4920;
+    margin-top: 10px;
+}
+
+.menu-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+    
+}
+
+/* Button Styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#view-all-menu {
+    padding: 10px 20px;
+    background-color: #9f4920;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+}
+
+
+
+
+#Inquiries {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #9f4920;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+ input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 16px;
+} 
+
+
+
+.btn {
+    font-size: 15px;
+    
+    background-color:#9f4920;
+    color: white;
+    padding: 15px;
+    border: 1px solid #9f4920;
+
+    margin-left: 110px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.picture-sec{
+    
+    width: 425px;
+}
+.iconCon{
+    display: flex ;
+    gap: 20px;
+    
+     
+}
+#fb{
+    border: 2PX solid #9f4920; 
+    color:#9f4920; 
+      height: 30px;
+      width: 30px;
+      padding: 2px;
+}
+.ICONbOX i{
+    color: #9f4920;
+    
+    
+}
+ #fb:hover{
+     background-color:red; 
+    
+    color: white;
+    
+} 
+.title-icon{
+    display: flex;
+    justify-content: center;
+align-items: center;
+    gap: 20px;
+}
+#img-t{
+    height: 45px;
+    width: 45px;
+    padding: 10px;
+    color: #9f4920;
+    
+    
+   
+}
+.first-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20PX;
+    
+}
+.iso-cer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20PX;
+    
+}
+#pic{
+    position: absolute;
+    bottom: 2030px;
+    left: 60px;
+    height: 180px;
+    width: 180px;
+    
+}
+#heading{
+    color:black;
+    font-size: 25px;
+    margin-right: 5px;
+    padding: 10px;
+}
+#Costomer{
+    font-size: 25px;
+    margin-right: 10px;
+    color: #9f4920;
+    padding: 0px;
+}
+#drink{
+    margin-left: 150px;
+   height: 100px;
+   width: 100px;
+    color: #9f4920;
+    padding: 20px;
+}
+#drin{
+    margin-left: 150px;
+   height: 100px;
+   width: 100px;
+    color: #9f4920;
+    padding: 15px;
+}
+#coffee{
+    color:black;
+    margin-left: 140px;
+    font-size: 22PX;
+    
+}
+#coffe{
+    color:black;
+    margin-left: 120px;
+    font-size: 22PX;
+    
+}
+#paragraph{
+    font-size: 18px;
+    margin-left: 30px;
+    padding: 10PX;
+}
+.icon-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    width: auto;
+    
+    
+}
+
+.menu-item {
+    
+     display: flex;
+     
+     align-items: center; 
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px; 
+    margin-left: 15px;
+}
+
+.right-bar img {
+    width: 150px;
+    height: 80px;
+
+    border-radius: 50%;
+}
+
+
+
+.macaccino {
+    font-size: 1.5rem;
+}
+
+.nuic {
+    font-size: 1rem;
+    color: #555;
+}
+#view-menu-button{
+     color: #ddd;
+     font-size: 18px;
+    border: 1px solid brown;
+    background-color: #9f4920;
+    margin: 25px;
+    padding: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px; 
+   
+}
+
+.office-hours{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+    gap: 30px;
+    background-color: white;
+}
+
+
+
+
+.email,.phone,.office,.address{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+    
+}
+.hContwnt{
+    display: flex;
+    flex-direction: column;
+    gap: 10PX;
+}
+#ti{
+    text-align: center;
+    padding: 10px;
+    background-color: #9f4920;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 3px;
+    
+    
+}
+#hea{
+font-size: 20px;
+}
+#pha{
+font-size: 20px;
+}
+#firstcoffee img{
+    margin-left: 15px;
+    border-radius: 15px;
+    
+    
+}
+.phone{
+    gap: 20px;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.macacci{
+    color: #9f4920;
+    margin-bottom: 45px;
+    margin-right: 20px;
+    font-size: 30px;
+    
+}
+.contact-list{
+font-size: 18px;
+    display: flex;
+   gap: 40px;
+    justify-content: space-between;
+}
+
+#fb img:hover{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(0%) hue-rotate(200deg) brightness(104%) contrast(104%);
+}
+
+</style>
+</head>
+<body>
+   
+    <div class="background-img">
+        <img src="bg-1.webp" alt="Background Image 1" class="img1">
+        <img src="download (1).webp" alt="Background Image 2" class="img4">
+        
+        <img src="bg-3.webp" alt="Background Image 2" class="img2">
+        <img src="bg-3.webp" alt="Background Image 3" class="img3">
+    </div>
+
+    <div class="container">
+       <div class="picture-sec">
+        <div id="banner">
+            <img src="banner.webp" alt="Banner Image">
+        </div>
+        <div id="shape">
+            <img src="shape1.webp" alt="shape Image">
+        </div>
+    </div>
+    
+        <div class="master">
+            <h1 id="simmons">Andrew Simmons</h1><br>
+            <p id="chef">Master Chef</p><br>
+
+            
+            <div id="client">
+                <img src="client-img.webp" alt="Portrait of Andrew Simmons">
+            </div>
+        </div><br>
+
+        
+          <div class="iconCon"> 
+            
+                <!-- <div id="fb"><img src="download (9).webp" alt=""></div> -->
+
+                <div id="fb"><i class="ri-google-fill"></i></div>
+                <div id="fb"><img src="download (10).webp" alt=""></div>
+                <div id="fb"><img src="download (11).webp" alt=""></div>
+                <div id="fb"><img src="download (12).webp" alt=""></div>
+                <div id="fb"><img src="download (13).webp" alt=""></div>
+                <div id="fb"><img src="download (14).webp" alt=""></div>
+                <div id="fb"><img src="download (15).webp" alt=""></div>
+                <div id="fb"><img src="download (16).webp" alt=""></div>
+            
+                
+        
+        </div>
+        
+
+        
+        <p id="para">
+            Nisi tortor pretium leo aliquam urna vitae sit. Suspendisse porttitor ut id est sed et. Ullamcorper sed auctor rutrum leo. Massa cum ac fermentum mi sed blandit facilisi volutpat. Viverra mauris est in euismod. Elementum pellentesque volutpat sit nulla.
+        </p><br>
+        <div class="title-icon">
+        <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+        <h1 id="headingabout">ABOUT US </h1>
+        <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+    </div>
+        <div class="about-img">
+            <img src="about-us-img.webp" alt="">
+        </div><br>
+        <div class="first-content">
+            
+                
+            <div class="right-container">
+            <div id="cupicon"><img src="about-us2.webp">
+            </div></div>
+            <div class="left-container">
+             <h1 id="natural">Natural Coffee Beans</h1>
+            <p id="sed">Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque</p>
+        </div> </div><br>
+        <div class="iso-cer">
+            
+                
+            <div class="right-container">
+            <div id="cupicon"><img src="about-us1.webp">
+            </div></div>
+            <div class="left-container">
+             <h1 id="natural">100% ISO Certification</h1>
+            <p id="sed">Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque</p>
+        </div> </div><br>
+            
+    <div>
+
+
+        <div class="title-icon">
+            <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+            <h1 id="headingabout">GALLERY</h1>
+            <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+        </div>
+           <nav id="gallery2"> <img src="gallery2.webp" alt=""></nav>
+        </div><br>
+        <div class="title-icon">
+            <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+            <h1 id="headingabout">OUR FEATURES </h1>
+            <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+        </div>
+         <div class="hero">
+            <div class="shop-best">
+               <div id="drink"> <img src="features1.webp" alt=""></i></div>
+                <h1 id="coffee">  Coffee Shops</h1>
+                <p id="paragraph">Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc sit amet.
+               </p>
+             </div>
+            <br>
+            <div class="best-coffee">
+            <div id="drin"> <img src="features2.webp" alt=""></i></div>
+            <h1 id="coffe"> Shop Coffee  online</h1>
+            <p id="paragraph">Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc sit amet.
+           </p>
+        </div>
+        <br>
+              <div class="best-coffee">
+             <div id="drin"> <img src="features2.webp" alt=""></i></div>
+            <h1 id="coffe"> Best Coffee  machine</h1>
+         <p id="paragraph">Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc sit amet.
+        </p>
+    </div>
+    
+    </div><br>
+   
+    <br>
+    
+    <div class="title-icon">
+        <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+        <h1 id="headingabout">MENU</h1>
+        <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+    </div><BR>
+    <div class="icon-bar">
+        <!-- Menu Item 1 -->
+        <div class="menu-item">
+            <div class="right-bar">
+                <div class="pick"><img src="menu2.webp" alt="Menu Image 1"></div>
+            </div>
+            <div class="left-bar">
+                <h1 class="macaccino">Mocaccino</h1>
+                <p class="nuic">Nunc imperdiet, mi egestas vestibulum maximus,  ultricies ...</p>
+            </div>
+            <h2 class="macacci">5.88$</h2>
+        </div>
+        
+        <!-- Menu Item 2 -->
+        <div class="menu-item">
+            <div class="right-bar">
+                <div class="pick"><img src="menu3.webp" alt="Menu Image 2"></div>
+            </div>
+            <div class="left-bar">
+                <h1 class="macaccino">Americano</h1>
+                <p class="nuic">Nunc imperdiet, mi egestas vestibulum maximus,  ultricies ...</p>
+            </div>
+            <h2 class="macacci">3.55$</h2>
+        </div>
+    
+        <!-- Menu Item 3 -->
+        <div class="menu-item">
+            <div class="right-bar">
+                <div class="pick"><img src="menu2.webp" alt="Menu Image 3"></div>
+            </div>
+            <div class="left-bar">
+                <h1 class="Cappuccino">Cappuccino</h1>
+                <p class="nuic">Nunc imperdiet, mi egestas vestibulum maximus,  ultricies ...</p>
+                
+            </div>
+            <h2 class="macacci">3.89$</h2>
+        </div>
+    
+        <!-- Menu Item 4 -->
+        <div class="menu-item">
+            <div class="right-bar">
+                <div class="pick"><img src="menu4.webp" alt="Menu Image 4"></div>
+            </div>
+            <div class="left-bar">
+                <h1 class="macaccino">Dessert Nachos</h1>
+                <p class="nuic">Nunc imperdiet, mi egestas vestibulum maximus,  ultricies ...</p>
+            </div>
+            <h2 class="macacci">4.20$</h2>
+        </div>
+    
+        <!-- Button -->
+        <button id="view-menu-button">View All Menu</button>
+    </div><br>
+    <img src="download (2).webp" alt="">
+        <div class="Testimonials">
+        
+            <div class="title-icon">
+                <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+                <h1 id="headingabout">OUR TESTIMONIALS</h1>
+                <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+            </div>
+            <div id="final">
+                <img src="client-img.webp" alt="Portrait of Andrew Simmons">
+            </div>
+           <p id="lorem"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, maiores id placeat laudantium ab nihil unde nobis blanditiis quaerat expedita molestiae aliquid tempora hic, nemo iste nesciunt obcaecati tempore quas beatae, quidem asperiores ad corrupti laboriosam! Vitae soluta nemo nostrum!</p>
+    
+    <h1 id="heading">Jamina Tower</h1>
+    <h2 id="Costomer">Costomer</h2><br>
+</div><br>
+<div>
+    <div class="title-icon">
+        <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+        <h1 id="headingabout">OFFERS</h1>
+        <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+    </div><br>
+    <div class="lower-bar">
+        <div id="get1"><img src="offer1.webp" alt=""></div>
+        <div id="pic"><img src="offer2.webp" alt=""></div>
+
+        <h1 id="buy1"> buy1 get1</h1>
+        <button id="ordernow">order now</button>
+    </div>
+</div><br>
+<div class="title-icon">
+    <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+    <h1 id="headingabout">LETEST BLOG</h1><br>
+    <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+</div>
+
+<div class=" re-content">
+    <div id="firstcoffee"><img src="gallery2.webp" alt=""></div><br>
+    <h1 id="Reasons">Reasons To Drink Coffee Every Day</h1><br>
+    <p id="lobortis">Lobortis etiam lectus mollis vulputate non egestas. Non aliquet facilisis leo tellus vulputate malesuada et tellus...</p>
+</div><BR>
+<button id="view">view all begs</button><br>
+<br>
+
+
+ <div class="form-container">
+    <div class="title-icon">
+        <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+        <h1 id="headingabout">INQURIRIES</h1>
+        <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+    </div><br>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+    </form> 
+</div>
+<div class="fill-table">
+    <div class="title-icon">
+        <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+        <h1 id="headingabout">CONTACT ME</h1>
+        <div id="img-t"><img src="title-icon.webp" alt="about us"></div>
+    </div>
+    <div class="contact-details">
+        <div class="phone">
+        <div id="ti">
+            <img src="download (4).webp" alt="">
+        </div>
+        <div class="hContwnt">
+            <h6 id="hea">phone</h6>
+            <p id="pha">7060197917</p>
+        </div>
+    
+        </div>
+        
+        <div class="phone">
+        <div id="ti">
+            <img src="download (5).webp" alt="">
+        </div>
+        <div class="hContwnt">
+            <h6 id="hea">email</h6>
+            <p id="pha">rajput7060piyush@gmail.com</p>
+        </div>
+    </div>
+       
+        
+            <div class="phone">
+            <div id="ti">
+                <img src="download (6).webp" alt="">
+            </div>
+            <div class="hContwnt">
+                <h6 id="hea">office-phone</h6>
+                <p id="pha">7060197917</p>
+            </div>
+        </div>
+        
+            <div class="phone">
+            <div id="ti">
+               <img src="download (7).webp" alt="">
+            </div>
+            <div class="hContwnt">
+                <h6 id="hea">address</h6>
+                <p id="placeholder">chandigrah</p>
+            </div>
+        
+    
+    </div>
+    <div class="office-hours">
+        <div id="ti">
+        <img src="download (8).webp" alt=""></div>
+        <div>
+        <h3  >Office Hours</h3><br>
+      
+       
+    <div class="contact-list">
+        <span class="days-text">monday</span>
+        <span class="time-text">09:00-22:00</span>
+    </div>
+    <div class="contact-list">
+        <span class="days-text">Tuesday</span>
+        <span class="time-text">09:00-22:00</span>
+    </div>
+    <div class="contact-list">
+        <span class="days-text">Wednesday</span>
+        <span class="time-text">09:00-22:00</span>
+    </div>
+    <div class="contact-list">
+        <span class="days-text">Thursday</span>
+        <span class="time-text">09:00-22:00</span>
+    </div>
+    <div class="contact-list">
+        <span class="days-text">Friday</span>
+        <span class="time-text">09:00-22:00</span>
+    </div>
+    <div class="contact-list">
+        <span class="days-text">saturday</span>
+        <span class="time-text">09:00-22:00</span>
+    </div>
+    <div class="contact-list">
+        <span class="days-text">sunday</span>
+        <span class="time-text">Closed</span>
+    </div>
+    
+      </div>
+    </div>
+    </div>
+  <br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109744.05905809443!2d76.68831105586055!3d30.732401984306712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1732041236579!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</body>
+</html>  
